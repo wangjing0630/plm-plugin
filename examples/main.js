@@ -1,16 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
-
+import Antd from 'ant-design-vue';
+import 'ant-design-vue/dist/antd.css';
+Vue.use(Antd);
 // import {toast,msg,folder,} from '../packages/index'
-import AttributeInfo from '../packages/index'
-import DrawingList from '../packages/index'
-
+import {AttributeInfo,DrawingList} from '../packages/index'
+Vue.use(AttributeInfo).use(DrawingList)
 // import {toast,msg} from '../lib/com.umd'
 // Vue.use(toast)
 // Vue.use(msg)
-console.log(AttributeInfo)
-Vue.use(AttributeInfo)
-Vue.use(DrawingList)
 // 两种方式都可以 Vue.use(toast) toast.install(Vue)
 // AttributeInfo.install(Vue)
 // toast.install(Vue)
@@ -24,10 +22,9 @@ Vue.use(DrawingList)
 // clientAccount.install(Vue)
 
 // console.log(msg)
-import Antd from 'ant-design-vue';
-import 'ant-design-vue/dist/antd.css';
+
 Vue.config.productionTip = false
-Vue.use(Antd);
+
 new Vue({
   render: h => h(App),
 }).$mount('#app')

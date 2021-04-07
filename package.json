@@ -1,7 +1,7 @@
 {
-  "name": "plm-tree",
+  "name": "11260plugin-plm",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "main": "packages/index.js",
   "scripts": {
     "lib": "vue-cli-service build --target lib --name com --dest lib packages/index.js",
@@ -13,6 +13,8 @@
     "ant-design-vue": "^1.7.4",
     "babel-plugin-import": "^1.13.3",
     "core-js": "^3.6.5",
+    "less": "2.7.3",
+    "less-loader": "5.0.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {

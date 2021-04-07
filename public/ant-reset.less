@@ -1,0 +1,267 @@
+/*header*/
+.ant-page-header{
+  padding: 12px 24px;
+}
+.ant-page-header-heading-title{
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500 ;
+  font-size: 16px;
+}
+
+/*empty image*/
+.ant-empty-image{
+  text-align: center;
+}
+
+/*card*/
+.ant-card-head{
+  min-height:36px;
+  padding: 0 12px;
+  .ant-card-head-title{
+    padding: 8px 0;
+  }
+}
+.ant-card-body{
+  padding: 12px;
+}
+.ant-card-extra{
+  padding:0;
+}
+/* 折叠面板 */
+.ant-collapse > .ant-collapse-item > .ant-collapse-header{
+  padding: 0;
+  padding-left: 14px;
+  font-weight:bold;
+  font-size:15px;
+  color:#555;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow{
+  left:0px;
+}
+.ant-collapse-borderless > .ant-collapse-item{
+  border-bottom: 0;
+}
+.ant-collapse-borderless{
+  background: none;
+}
+.ant-collapse{
+  background: none;
+}
+.ant-collapse-content > .ant-collapse-content-box{
+  padding:10px 0px 10px 10px;
+}
+/*table*/
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td{
+  padding: 10px 10px;
+}
+.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td{
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/*tab*/
+.ant-tabs-nav .ant-tabs-tab{
+  padding: 4px 12px;
+  transition:none;
+}
+.ant-tabs-nav .ant-tabs-tab-active{
+  background: #1890ff;
+  color:#fff;
+  border-radius:4px;
+}
+.ant-tabs-nav .ant-tabs-tab-active:hover{
+  color:#fff;
+}
+.ant-tabs-top .ant-tabs-ink-bar-animated, .ant-tabs-bottom .ant-tabs-ink-bar-animated{
+  transition:none;
+}
+
+/*tree*/
+.ant-tree > li:last-child{
+  padding: 0;
+}
+.ant-tree > li:first-child{
+  padding: 0;
+}
+.ant-tree li span.ant-tree-switcher, .ant-tree li span.ant-tree-iconEle{
+  width:20px;
+}
+.ant-tree li .ant-tree-node-content-wrapper{
+  width:calc(100% - 8px);
+}
+.ant-tree li .ant-tree-node-content-wrapper:hover{
+  background: rgba(0, 0, 0, 0.04);
+}
+.ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected{
+  background: rgba(0, 0, 0, 0.08)
+}
+.ant-tree.ant-tree-show-line li span.ant-tree-switcher {
+  background: transparent;
+}
+
+/*btn*/
+.ant-btn{
+  height:28px;
+  line-height: 26px;
+}
+.ant-btn-group{
+  .ant-btn{
+    height:24px;
+    line-height: 22px;
+  }
+}
+
+/*input*/
+.ant-input{
+  height: 28px;
+}
+/*select*/
+.ant-select-selection--single{
+  height: 28px;
+}
+.ant-select-selection--multiple{
+  min-height: 28px;
+}
+.ant-select-selection__rendered{
+  line-height: 26px;
+}
+.ant-select-selection--multiple > ul > li, .ant-select-selection--multiple .ant-select-selection__rendered > ul > li{
+  height: 18px;
+  line-height: 16px;
+}
+/*modal*/
+.ant-modal-footer {
+  padding: 8px 10px;
+}
+.ant-modal-header {
+  padding: 8px 10px;
+}
+.ant-modal-close-x {
+  height: 40px;
+  line-height: 40px;
+}
+.ant-modal-body {
+  padding: 10px;
+  height: 450px;
+}
+
+/*drawer*/
+.ant-drawer{
+  overflow: hidden;
+}
+.ant-drawer-header {
+  padding: 8px 10px;
+}
+.ant-drawer-close {
+  height: 40px;
+  line-height: 40px;
+}
+.ant-drawer-body {
+  padding: 10px;
+  overflow: hidden;
+}
+
+/*ant-form-item*/
+.ant-form-item{
+  margin-bottom: 0;
+  color:#888888;
+  font-size:12px;
+}
+.ant-form-item-label{
+  text-align:left;
+}
+.ant-form-item-label > label::after{
+  content:''
+}
+
+
+/*自定义class*/
+/*例如表格上方操作按钮*/
+.plm-icon-btn{
+  height:30px;
+  line-height: 30px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  //padding: 2px 4px;
+  &:hover{
+    //background: #e6f0ff;
+    color:#1890ff;
+  }
+  .anticon{
+    margin-right:2px;
+  }
+}
+/*table里的操作按钮*/
+.plm-table-btn{
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.65);
+  display: inline-block;
+  padding: 2px 4px;
+  &:hover{
+    background: #e6f0ff;
+    color:#1890ff;
+  }
+  .anticon-more{
+    font-size:16px;
+  }
+}
+/*例如树形结构中的操作图标按钮*/
+.plm-bg-icon-btn{
+  color: rgba(0, 0, 0, 0.3);
+  &:hover{
+    color:rgba(0, 0, 0, 0.55);
+  }
+}
+.plm-tree-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .plm-tree-node-btn {
+    width: 60px;
+    display: none;
+    text-align: right;
+  }
+
+  &:hover .plm-tree-node-btn {
+    display: block;
+  }
+}
+
+/* 自定义样式 属性标题 */
+.plm-property-title{
+  display:flex;
+  margin-bottom:10px;
+  .plm-property-img{
+    width:60px;
+    height:60px; 
+  }
+  .plm-property-desc{
+    margin-left:10px;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .plm-property-desc-title{
+      font-weight:bold;
+      font-size:18px;
+      color:rgba(0, 0, 0, 0.85);
+      width:calc(100% ~"-" 20px);
+      display:inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis
+    }
+    .plm-property-desc-text{
+      color:rgba(0, 0, 0, 0.65);
+    }
+  }
+}
