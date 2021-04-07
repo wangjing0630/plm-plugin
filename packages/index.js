@@ -15,7 +15,11 @@ const install = function(Vue) {
 if (typeof window !== 'undefined' && window.Vue) {
     install(window.Vue)
 }
-
+export {
+    install,
+    AttributeInfo,
+    DrawingList
+};
 export default {
     install,
     AttributeInfo,
