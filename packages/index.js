@@ -1,14 +1,20 @@
 import AttributeInfo from "./attributeInfo/index.js"
 import DrawingList from "./drawingList/index.js"
+import PlmTree from "./plmTree/index.js"
+import DrawingListCopy from "./drawingListCopy/index.js"
+import PlmTreeCopy from "./plmTreeCopy/index.js"
 
 const components = [
     AttributeInfo,
-    DrawingList
+    DrawingList,
+    PlmTree,
+    DrawingListCopy,
+    PlmTreeCopy
+
 ]
 
 const install = function(Vue) {
     if(install.installed) return
-
     components.map(component => Vue.component(component.name, component))
 }
 
@@ -18,12 +24,18 @@ if (typeof window !== 'undefined' && window.Vue) {
 export {
     install,
     AttributeInfo,
-    DrawingList
+    DrawingList,
+    PlmTree,
+    DrawingListCopy,
+    PlmTreeCopy
 }
 export default {
     install,
     AttributeInfo,
-    DrawingList
+    DrawingList,
+    PlmTree,
+    DrawingListCopy,
+    PlmTreeCopy
 }
 /* import fyChatToast from './to ast/src/fyChatToast.vue'
 import msg from './toast/src/msg.vue'

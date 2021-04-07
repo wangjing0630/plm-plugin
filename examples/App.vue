@@ -2,6 +2,7 @@
   <div id="app">
     <attribute-info></attribute-info>
     <drawing-list></drawing-list>
+    <plm-tree></plm-tree>
     <!-- <msg></msg>
     <folder></folder> 
     <div @click="openToast">111</div> -->

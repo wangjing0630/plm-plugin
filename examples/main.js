@@ -4,8 +4,8 @@ import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 Vue.use(Antd);
 // import {toast,msg,folder,} from '../packages/index'
-import {AttributeInfo,DrawingList} from '../packages/index'
-Vue.use(AttributeInfo).use(DrawingList)
+import {AttributeInfo,DrawingList,PlmTree} from '../packages/index'
+Vue.use(AttributeInfo).use(DrawingList).use(PlmTree)
 // import {toast,msg} from '../lib/com.umd'
 // Vue.use(toast)
 // Vue.use(msg)

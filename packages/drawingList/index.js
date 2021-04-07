@@ -1,7 +1,7 @@
-import DrawingList from "./src/index.vue"
+import component from "./src/index.vue"
 
-DrawingList.install = function (Vue) {
-    Vue.component(DrawingList.name, DrawingList)
+component.install = function (Vue) {
+    Vue.component(component.name, component)
 }
 
-export default DrawingList
+export default component
