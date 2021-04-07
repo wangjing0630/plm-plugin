@@ -325,7 +325,7 @@ const partData = [
   }
 ];
 export default {
-  name: "drawingList",
+  name: "DrawingList",
   data() {
     return {
       partData,
