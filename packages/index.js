@@ -19,7 +19,7 @@ export {
     install,
     AttributeInfo,
     DrawingList
-};
+}
 export default {
     install,
     AttributeInfo,
