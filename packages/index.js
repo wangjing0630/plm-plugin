@@ -21,13 +21,13 @@ const install = function(Vue) {
 if (typeof window !== 'undefined' && window.Vue) {
     install(window.Vue)
 }
-export {
-    AttributeInfo,
-    DrawingList,
-    PlmTree,
-    DrawingListCopy,
-    PlmTreeCopy
-}
+// export {
+//     AttributeInfo,
+//     DrawingList,
+//     PlmTree,
+//     DrawingListCopy,
+//     PlmTreeCopy
+// }
 export default {
     install,
     AttributeInfo,

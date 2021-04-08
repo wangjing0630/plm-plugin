@@ -2,7 +2,7 @@
   "name": "11260plugin-plm",
   "version": "0.1.0",
   "private": false,
-  "main": "packages/index.js",
+  "main": "lib/index/index.js",
   "scripts": {
     "lib": "vue-cli-service build --target lib --name com --dest lib packages/index.js",
     "serve": "vue-cli-service serve --hot",
