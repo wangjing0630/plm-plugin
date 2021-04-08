@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "main": "lib/index/index.js",
+  "files": ["lib"],
   "scripts": {
     "lib": "vue-cli-service build --target lib --name com --dest lib packages/index.js",
     "serve": "vue-cli-service serve --hot",
